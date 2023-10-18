@@ -58,59 +58,64 @@
     <section id="experienceCtn">
         <h1 class="heading">Experience</h1>
         <div class="experienceBody">
-            <div class="experienceBox" data-aos="fade-left">
-                <span class="timeline">02/2022 - Present</span>
-                <h2>Member of Technical Staf</h2>
-                <h3>Mavenir Systems Pvt Ltd.</h3>
-                <p>
-                    <li>
-                        Conduct O-RAN fronthaul testing, ensuring the seamless integration and performance of fronthaul interfaces to optimize network efficiency.
-                    </li>
-                    <li>
-                        Demonstrate strong knowledge of O-RAN C/U/S/M- Planes, effectively contributing to the design and implementation of O-RAN architecture.
-                    </li>
-                    <li>
-                        Utilize QXDM/XCAL tools to analyze and troubleshoot network performance, ensuring adherence to quality standards and identifying areas for improvement.
-                    </li>
-                    <li>
-                        Proficient in 5G UE-gNB call flows, actively participating in end-to-end testing and troubleshooting to ensure smooth and reliable communication between user equipment and base stations.
-                    </li>
-                    <li>
-                        Log analysis and troubleshooting of issues observed in WIRESHARK Log Analyser for eNB Analysis of Targeted eNB with Proper Justification of failed KPIs as per QA Guidelines.
-                    </li>
-                    <li>
-                        Monitor and Analyze Regional Market KPIs to Opti- mize and Determine Network Performance also Identification of Back-haul or Equipment Issues.
-                    </li>
-                    <li>
-                        Analysis of neighbor relations and implementation of corrections with Pre- Post KPIs.
-                    </li>
-                </p>
+            <div class="box">
+                <span class="timeline" data-aos="fade-in">02/2022 - Present</span>
+                <div class="experienceBox" data-aos="fade-left">
+                    <h2>Member of Technical Staf</h2>
+                    <h3>Mavenir Systems Pvt Ltd.</h3>
+                    <p>
+                        <li>
+                            Conduct O-RAN fronthaul testing, ensuring the seamless integration and performance of fronthaul interfaces to optimize network efficiency.
+                        </li>
+                        <li>
+                            Demonstrate strong knowledge of O-RAN C/U/S/M- Planes, effectively contributing to the design and implementation of O-RAN architecture.
+                        </li>
+                        <li>
+                            Utilize QXDM/XCAL tools to analyze and troubleshoot network performance, ensuring adherence to quality standards and identifying areas for improvement.
+                        </li>
+                        <li>
+                            Proficient in 5G UE-gNB call flows, actively participating in end-to-end testing and troubleshooting to ensure smooth and reliable communication between user equipment and base stations.
+                        </li>
+                        <li>
+                            Log analysis and troubleshooting of issues observed in WIRESHARK Log Analyser for eNB Analysis of Targeted eNB with Proper Justification of failed KPIs as per QA Guidelines.
+                        </li>
+                        <li>
+                            Monitor and Analyze Regional Market KPIs to Opti- mize and Determine Network Performance also Identification of Back-haul or Equipment Issues.
+                        </li>
+                        <li>
+                            Analysis of neighbor relations and implementation of corrections with Pre- Post KPIs.
+                        </li>
+                    </p>
+                </div>
             </div>
-            <div class="experienceBox" data-aos="fade-left">
-                <span class="timeline">09/2021 - 02/2022</span>
-                <h2>Front End Engineer</h2>
-                <h3>PwC</h3>
-                <p>
-                    <li>
-                        Strong understanding of gw digital products,core applications and policy lifecycle.
-                    </li>
-                </p>
+            <div class="box">
+                <span class="timeline" data-aos="fade-in">09/2021 - 02/2022</span>
+                <div class="experienceBox" data-aos="fade-left">
+                    <h2>Front End Engineer</h2>
+                    <h3>PwC</h3>
+                    <p>
+                        <li>
+                            Strong understanding of gw digital products,core applications and policy lifecycle.
+                        </li>
+                    </p>
+                </div>
             </div>
         </div>
     </section>
     <section id="educationCtn">
         <h1 class="heading">Education</h1>
         <div class="educationBody">
-            <div class="educationBox" data-aos="fade-left">
-                <span class="timeline">07/2017 - 05/2021</span>
-                <h2>Bachelor Of Technology</h2>
-                <h3>CMR Institute Of Technology</h3>
-                <p>
-                    <li>
-                        Electronics and Communication Engineering - <i>CGPA - 8.5</i>
-
-                    </li>
-                </p>
+            <div class="box">
+                <span class="timeline" data-aos="fade-in">07/2017 - 05/2021</span>
+                <div class="educationBox" data-aos="fade-left">
+                    <h2>Bachelor Of Technology</h2>
+                    <h3>CMR Institute Of Technology</h3>
+                    <p>
+                        <li>
+                            Electronics and Communication Engineering - <i>CGPA - 8.5</i>
+                        </li>
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -210,11 +215,13 @@
         });
     </script>
     <script>
-        const menu = document.getElementsByClassName("appItems")[0];
+        const menu = document.querySelector(".appItems");
         const menuAnchor = document.querySelector(".appItems a");
+        console.log(menu.style.display)
         const toggleAppBar = ()=>{
             const disp = menu.style.display;
-            menu.style.display = (disp === "none")?"flex":"none";
+            menu.style.display = (disp === "flex")?"none":"flex";
+            console.log(menu.style.display)
         }
         menu.addEventListener('click',()=>{
             toggleAppBar();

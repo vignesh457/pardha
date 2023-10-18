@@ -1,4 +1,5 @@
 #footerCtn{
+    overflow-x: hidden; 
     width: 100vw;
     height: 30vh;
     display: flex;
@@ -7,6 +8,7 @@
     flex-direction: column;
     gap: 20px;
     background-color: #34a2cd20;
+    margin-top: 10px;
 }
 
 .socialIcons{

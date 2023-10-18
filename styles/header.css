@@ -12,6 +12,7 @@ body{
   /* font-family: 'Open Sans', sans-serif; */
 }
 #headerCtn{
+    overflow-x: hidden; 
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -21,10 +22,9 @@ body{
 }
 #logo{
     flex: 0.8;
-    font-size: 35px;
 }
 #logo img{
-    height: 80px;
+    height: 60px;
 }
 nav{
     height: 15%;
@@ -123,16 +123,17 @@ nav{
 }
 .appItems{
     position: absolute;
-    background-color: #ffffff;
+    background-color: #ffffffa3;
     top: 15vh;
     right: 10px;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 20px 50px;
     border-radius: 10px;
+    z-index: 2;
+    backdrop-filter: blur(6px);
     display: none;
 }
 .appItems li, .appItems a{
@@ -140,12 +141,21 @@ nav{
     text-decoration: none;
     font-size: 20px;
     line-height: 2.5;
+    color: #130F49;
+}
+.appItems a:hover{
+    color: #34A1CD;
 }
 #toggler{
     display: none;
     font-size: 30px;
     flex: 0.5;
     color: #130F49;
+}
+.box{
+    height: fit-content;
+    width: fit-content;
+    position: relative;
 }
 
 @media screen and (max-width: 700px) {
@@ -163,9 +173,6 @@ nav{
     .headerBody .imageContainer{
         height: 30%;
         width: 100%;
-    }
-    .headerBody .imageContainer img{
-
     }
     .headerBody h1{
         color: #34A1CD;
