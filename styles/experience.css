@@ -1,0 +1,68 @@
+#experienceCtn{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden; 
+}
+.experienceBody{
+    width: 80%;
+    border-left: 5px solid #130F49;
+    height: 85%;
+    margin-bottom: 10px;
+}
+.experienceBox{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 30px;
+    margin-left: 60px;
+    margin-top: 30px;
+    position: relative;
+}
+.timeline{
+    background-color: #34A1CD;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    color: white;
+    border-radius: 10px;
+    padding: 15px 9px;
+    position: absolute;
+    top: -25px;
+    left: -130px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.experienceBox h2{
+    color: #34A1CD;
+}
+.experienceBox h3{
+    color: #34A1CD;
+    line-height: 3;
+}
+.experienceBox li{
+    color: #130f49c1;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 2;
+    list-style-type: disc;
+}
+
+@media screen and (max-width: 700px) {
+    .timeline {
+        padding: 12px 5px;
+        left: -87px;
+    }
+    .experienceBox{
+        width: 90%;
+        padding: 20px;
+    }
+    .experienceBox h3 {
+        font-size: 16px;
+    }
+    .experienceBox li {
+        font-size: 12px;
+    }
+}
